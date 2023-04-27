@@ -1,0 +1,160 @@
+li {
+    list-style-type: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #7D8491;
+}
+.wrapper {
+display: flex;
+flex-flow: wrap;
+justify-content: space-between;
+padding-top: 20px;
+}
+
+.list {
+   margin-left: 10px;
+   padding: 0px 10px;
+   width: 52%;
+   border: 1px solid grey;
+   min-height: 600px;
+   border-radius: 10px;
+   background-color: #C0C5C1;
+}
+
+.empty {
+    display: flex;
+    justify-content: center;
+}
+
+.empty p {
+    margin-top: 40px;
+    margin-left: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    letter-spacing: 10px;
+    color:#4F7CAC;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    width: 45%;
+    border: 1px solid grey;
+    border-radius: 10px;
+    min-height: 600px;
+    padding-top: 50px;
+    background-color: #C0C5C1;
+    margin-right: 10px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main .task {
+    background-color: #EAF0CE;
+    border-radius: 5px;
+    outline: 0;
+}
+
+.main button {
+    margin-top: 20px;
+    width: 200px;
+    height: 40px;
+    border: none;
+    background-color: #4F7CAC;
+    border-radius: 5px;
+    color: #fff;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main button:hover{
+    border: 1px solid white;
+    color: #EAF0CE;
+}
+
+
+.main .error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #4F7CAC;
+    border-radius: 10px;
+    width: 350px;
+    height: 100px;
+    margin-top: 50px;
+    color: red;
+}
+
+.main h2 {
+    color: #59546C;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.list h1 {
+    text-align: center;
+    color: #59546C;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.tasks {
+   margin: 20px 10px;
+    padding: 20px 20px;
+    background-color: #EAF0CE;
+    border-radius: 5px;
+    width: 95%;
+    font-size: 20px;
+    position: relative;
+}
+
+.tasks li {
+    padding: 20px 5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #4F7CAC;
+    border-radius: 5px;
+    width: 90%;
+    margin-bottom: 20px;
+    word-wrap: break-word;
+    color: #343434;
+}
+
+
+.del {
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+}
+
+
+[type="checkbox"]{
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    position: relative;
+    top:5px;
+}
+
+
+@media screen and (max-width:600px){
+    .list {
+        width: 98%;
+        margin: 0px;
+        margin-bottom: 20px;
+        min-height: 250px;
+       
+    }
+
+    .main {
+        width: 98%;
+    }
+}
